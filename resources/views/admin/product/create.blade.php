@@ -24,14 +24,16 @@
             </div>
 
             <div class="form-group">
+                {{ Form::label('category_id', 'Categoria Prodotto') }}
+                {{ Form::select('category_id', $categories, null, ['class' => 'form-control','placeholder'=>'Seleziona Categoria']) }}
+            </div>
+
+            <div class="form-group">
                 {{ Form::label('image', 'Immagine') }}
                 {{ Form::file('image',array('class' => 'form-control')) }}
             </div>
 
-            <div class="form-group">
-                {{ Form::label('category_id', 'categories') }}
-                {{ Form::select('category_id', $categories, null, ['class' => 'form-control','placeholder'=>'Select Category']) }}
-            </div>
+
 
 
             {{ Form::submit('Crea Prodotto', array('class' => 'btn btn-success')) }}

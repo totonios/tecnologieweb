@@ -41,22 +41,17 @@ class ProductsController extends Controller
         $formInput=$request->except('image');
 
 //        validation
-        $this->validate($request,[
-            'name'=>'required',
-            'size'=>'required',
-            'price'=>'required',
-            'image'=>'image|mimes:png,jpg,jpeg|max:10000'
-        ]);
+
 //        image upload
         $image=$request->image;
         if($image){
             $imageName=$image->getClientOriginalName();
-            $image->move('images',$imageName);
+            $image->move('imagesp',$imageName);
             $formInput['image']=$imageName;
         }
 
         Product::create($formInput);
-        return redirect()->route('product.index');
+        return redirect()->route('admin.index');
     }
 
     /**
@@ -130,7 +125,7 @@ class ProductsController extends Controller
     public function uploadImages($productId,Request $request)
     {
 
-            
+
         $product=Product::find($productId);
 
         //        image upload

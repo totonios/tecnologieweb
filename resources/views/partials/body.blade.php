@@ -38,7 +38,7 @@
 							</div>
 
 						</div>
-						
+
 
 						<!----search-scripts---->
 						<script src="js/classie.js"></script>
@@ -50,7 +50,7 @@
 
 
 				    <ul class="icon1 sub-icon1 profile_img">
-					 <li><a class="active-icon c1" href="#"> </a>
+							<li><a class="active-icon c1" href="#"> </a>
 						<ul class="sub-icon1 list">
 						  <div class="product_control_buttons">
 						  	<a href="#"><img src="images/edit.png" alt=""/></a>

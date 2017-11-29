@@ -23,7 +23,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Ski360\\": "app/"
         }
     },
     "autoload-dev": {

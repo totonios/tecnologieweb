@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Ski360\Http\Controllers;
 
-use App\Category;
-use App\Product;
+use Ski360\Category;
+use Ski360\Product;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller

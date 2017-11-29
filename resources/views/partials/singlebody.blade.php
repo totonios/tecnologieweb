@@ -10,12 +10,12 @@
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
-						    	<li class="current"><a href="shop.html">Shop</a></li>
-						    	<li><a href="team.html">Team</a></li>
-						    	<li><a href="shop.html">Events</a></li>
-						    	<li><a href="experiance.html">Experiance</a></li>
-						    	<li><a href="shop.html">Company</a></li>
-								<li><a href="contact.html">Contact</a></li>
+						    	<li class="current"><a href="shop.html">Shop</a></li> {{PER IL CAZZETTO ROSSO SUL NOME}}
+									<li><a href="shop.html">Shop</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="experiance.html">Eventi</a></li>
+                  <li><a href="contact.html">Contattaci</a></li>
+                  <li><a href="login.html">Login</a></li>
 								<div class="clear"></div>
 							</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>

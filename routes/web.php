@@ -17,7 +17,7 @@ Route::get('/shop.html', 'frontcontroller@shop');
 Route::get('/team.html', 'frontcontroller@team');
 Route::get('/single.html', 'frontcontroller@single');
 Route::get('/login.html', 'frontcontroller@login');
-
+Route::get('contact.html', 'frontController@contact');
 
 Auth::routes();
 

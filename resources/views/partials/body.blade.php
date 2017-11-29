@@ -11,11 +11,12 @@
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
 
+
 						    	<li><a href="shop.html">Shop</a></li>
 						    	<li><a href="team.html">Team</a></li>
-						    	<li><a href="experiance.html">Events</a></li>
-						    	<li><a href="shop.html">Company</a></li>
-								<li><a href="contact.html">Contact</a></li>
+									<li><a href="experiance.html">Eventi</a></li>
+						    	<li><a href="contact.html">Contattaci</a></li>
+									<li><a href="login.html">Login</a></li>
 
 								<div class="clear"></div>
 
@@ -87,7 +88,7 @@
                 <div class="slide_content">
                     <div class="slide_content_wrap">
                         <!-- Text title -->
-                        <h1 class="title">Run Over<br>Everything</h1>
+                        <h1 class="title">Run Over<br>CACCA</h1>
                         <!-- /Text title -->
                         <div class="button"><a href="#">See Details</a></div>
                     </div>

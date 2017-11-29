@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Ski360;
 
 use Illuminate\Database\Eloquent\Model;
 

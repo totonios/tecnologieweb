@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Ski360\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -29,5 +29,9 @@ class frontcontroller extends Controller
 
   public function login(){
     return view('auth.login');
+  }
+
+  public function contact(){
+    return view('contact');
   }
 }

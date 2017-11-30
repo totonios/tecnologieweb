@@ -5,7 +5,8 @@
 			  <div class="col-md-12">
 				 <div class="header-left">
 					 <div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+						<a href="index.html"><img src="im
+							ages/logo.png" alt=""/></a>
 					 </div>
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
@@ -14,7 +15,30 @@
                   <li><a href="team.html">Team</a></li>
                   <li><a href="experiance.html">Eventi</a></li>
                   <li class="current"><a href="contact.html">Contattaci</a></li>
-                  <li><a href="login.html">Login</a></li>
+									@guest
+											<li><a href="{{ route('login') }}">Login</a></li>
+											<li><a href="{{ route('register') }}">Registrati</a></li>
+									@else
+											<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+															{{ Auth::user()->name }} <span class="caret"></span>
+													</a>
+
+													<ul class="dropdown-menu">
+															<li>
+																	<a href="{{ route('logout') }}"
+																			onclick="event.preventDefault();
+																							 document.getElementById('logout-form').submit();">
+																			Esci
+																	</a>
+
+																	<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+																			{{ csrf_field() }}
+																	</form>
+															</li>
+													</ul>
+											</li>
+									@endguest
 								<div class="clear"></div>
 							</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
@@ -76,9 +100,9 @@
 				<div class="col-md-5">
 					<p class="m_8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
 					<div class="address">
-				                <p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						   		<p>USA</p>
+				                <p>SCI 360,</p>
+						   		<p>VIA VETOIO UNIVAQ,</p>
+						   		<p>L'AQUILA ITALY</p>
 				   		<p>Phone:(00) 222 666 444</p>
 				   		<p>Fax: (000) 000 00 00 0</p>
 				 	 	<p>Email: <span>support[at]snow.com</span></p>

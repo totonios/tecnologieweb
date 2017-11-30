@@ -16,8 +16,32 @@
 						    	<li><a href="team.html">Team</a></li>
 									<li><a href="experiance.html">Eventi</a></li>
 						    	<li><a href="contact.html">Contattaci</a></li>
-									<li><a href="login.html">Login</a></li>
+									@guest
+											<li><a href="{{ route('login') }}">Login</a></li>
+											<li><a href="{{ route('register') }}">Registrati</a></li>
+									@else
+											<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+															{{ Auth::user()->name }} <span class="caret"></span>
+													</a>
 
+													<ul class="dropdown-menu">
+															<li>
+																	<a href="{{ route('logout') }}"
+																			onclick="event.preventDefault();
+																							 document.getElementById('logout-form').submit();">
+																			Esci
+																	</a>
+
+																	<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+																			{{ csrf_field() }}
+																	</form>
+															</li>
+													</ul>
+											</li>
+									@endguest
+							</ul>
+<script type="text/javascript" src="js/responsive-nav.js"></script>
 								<div class="clear"></div>
 
 							</ul>
@@ -63,7 +87,21 @@
                           $12.00</span></li>
 						  <div class="login_buttons">
 							 <div class="check_button"><a href="checkout.html">Check out</a></div>
-							 <div class="login_button"><a href="login.html">Login</a></div>
+
+								 <div class="login_button">
+									  @guest
+									 <a href="{{ route('login') }}">Login</a>
+											 @else
+									 <li class="dropdown">
+											 <a href="#" class="login_button"  aria-expanded="false" aria-haspopup="true">
+													 {{ Auth::user()->name }} 
+											 </a>
+
+
+											 </ul>
+									 </li>
+							 @endguest
+							</div>
 							 <div class="clear"></div>
 						  </div>
 						  <div class="clear"></div>
@@ -274,6 +312,8 @@
 							  <li class="pinterest"><a href="#"><span> </span></a></li>
 							  <li class="youtube"><a href="#"><span> </span></a></li>
 						    </ul>
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 						</ul>
 					</div>

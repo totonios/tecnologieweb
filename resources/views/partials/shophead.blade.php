@@ -1,5 +1,6 @@
 <head>
 <title>Free Snow Bootstrap Website Template | Shop :: w3layouts</title>
+<script src="{{ asset('js/app.js') }}"></script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

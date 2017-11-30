@@ -14,8 +14,31 @@
                 	<li class="current"><a href="team.html">Team</a></li>
                   <li><a href="experiance.html">Eventi</a></li>
                   <li><a href="contact.html">Contattaci</a></li>
-                  <li><a href="login.html">Login</a></li>
-						    	
+									@guest
+											<li><a href="{{ route('login') }}">Login</a></li>
+											<li><a href="{{ route('register') }}">Registrati</a></li>
+									@else
+											<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+															{{ Auth::user()->name }} <span class="caret"></span>
+													</a>
+
+													<ul class="dropdown-menu">
+															<li>
+																	<a href="{{ route('logout') }}"
+																			onclick="event.preventDefault();
+																							 document.getElementById('logout-form').submit();">
+																			Esci
+																	</a>
+
+																	<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+																			{{ csrf_field() }}
+																	</form>
+															</li>
+													</ul>
+											</li>
+									@endguest
+
 
 								<div class="clear"></div>
 							</ul>

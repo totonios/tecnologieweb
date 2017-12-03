@@ -6,12 +6,12 @@
 
   <body>
 
- @include('partials.singlebody')
+ @include('partials.eventibody')
 
         @yield('content')
 
 
 
   </body>
-    @include('partials.footer')
+  @include('partials.footer')
 </html>

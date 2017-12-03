@@ -483,6 +483,9 @@ small,
 cite {
   font-style: normal;
 }
+.BenvenutoBot{
+  color: black;
+}
 .text-left {
   text-align: left;
 }
@@ -1191,6 +1194,7 @@ pre code {
   }
   .col-md-4 {
     width: 33.33333333%;
+    margin-left: 22px;
   }
   .col-md-3 {
     width: 25%;
@@ -1736,7 +1740,6 @@ legend {
 }
 label {
   display: inline-block;
-  margin-bottom: 5px;
   font-weight: bold;
   color: white;
 }
@@ -1836,6 +1839,7 @@ input[type="date"] {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: transparent;
 }
 .radio label,
 .checkbox label {
@@ -2058,6 +2062,7 @@ select[multiple].input-lg {
   padding-top: 7px;
   margin-top: 0;
   margin-bottom: 0;
+  background-color: transparent;
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
@@ -2097,6 +2102,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-left: 55px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -2170,8 +2176,9 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #FFF;
-  background-color: #428BCA;
-  border-color: #357EBD;
+  background-color: #013303;
+  border-color: white;
+  margin-left: 57px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2394,6 +2401,7 @@ fieldset[disabled] .btn-link {
 .btn-link:active {
   border-color: transparent;
   color: white;
+  margin-left: 6px;
 }
 .btn-link:hover,
 .btn-link:focus {
@@ -4852,7 +4860,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
-  background-color: #000000;
+  background-color: black;
 }
 .panel-heading {
   padding: 10px 15px;

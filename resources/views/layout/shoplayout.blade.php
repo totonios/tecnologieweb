@@ -3,7 +3,7 @@
 
 
   <head>
-    @include('partials.shophead')
+    @include('partials.header')
   </head>
 
   <body>
@@ -14,4 +14,5 @@
 
 
   </body>
+    @include('partials.footer')
 </html>

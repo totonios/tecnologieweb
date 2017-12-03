@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('partials.head')
+    @include('partials.header')
   </head>
 
   <body>
 
  @include('partials.body')
 
-        @yield('content')
+
 
 
 
   </body>
+  @include('partials.footer')
+  @yield('content')
 </html>

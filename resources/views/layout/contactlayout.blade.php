@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('partials.contacthead')
+    @include('partials.header')
   </head>
 
   <body>
@@ -13,4 +13,5 @@
 
 
   </body>
+    @include('partials.footer')
 </html>

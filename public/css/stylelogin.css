@@ -33,6 +33,9 @@ body a {
 	float: left;
 	margin-right: 2%;
 }
+.BenvenutoBot{
+	color: red;
+}
 .menu {
 	float: left;
 	margin: 17px 0 0;
@@ -1745,18 +1748,22 @@ fieldset.input input[type="submit"]:hover {
 	font-size: 1.1em;
 	line-height: 27px;
 	cursor: pointer;
+	background-color: transparent;
 }
 .checkbox {
 	float: left;
 	margin-left: 8px;
 	position: relative;
 	font-weight: 600;
+	background-color: transparent;
 }
 .checkbox:last-child {
 	margin-bottom: 4px;
+	background-color: transparent;
 }
 .checkbox:last-child {
 	margin-bottom: 0;
+	background-color: transparent;
 }
 .news-letter {
 	color: #555;

@@ -2,17 +2,23 @@
 
 namespace Ski360\Http\Controllers;
 
+use Ski360\Category;
+use Ski360\Product;
 use Illuminate\Http\Request;
+
+
 
 class frontcontroller extends Controller
 {
-  public function index() {
+  public function homehome() {
 
-    return view('homehome');
+    $products=Product::all();
+    return view('homehome',compact('products'));
   }
 
   public function shop() {
-    return view('shop');
+    $products=Product::all();
+    return view('shop',compact('products'));
   }
 
   public function team() {
@@ -38,4 +44,6 @@ class frontcontroller extends Controller
   public function eventi(){
     return view('eventi');
   }
+
+
 }

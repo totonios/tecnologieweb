@@ -1,6 +1,8 @@
 <title>Free Snow Bootstrap Website Template | Shop :: w3layouts</title>
 <script src="{{ asset('js/app.js') }}"></script>
 <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+<link href=http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,6 +15,8 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/fwslider.js"></script>
 <!--end slider -->
+
+
 <script type="text/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");

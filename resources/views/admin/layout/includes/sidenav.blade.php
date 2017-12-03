@@ -12,10 +12,10 @@
                 </a>
                 <!-- Sub menu -->
                 <ul>
-
-                    <li><a href="{{route('admin.index')}}">Add Product</a></li>
+                    <li><a href="{{route('product.index')}}">Prodotti</a></li>
+                    <li><a href="{{route('product.create')}}">Aggiungi Prodotto</a></li>
                 </ul>
             </li>
-            
+
     </div>
 </div> <!-- ADMIN SIDE NAV-->

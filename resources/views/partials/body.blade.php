@@ -1,5 +1,5 @@
 <body>
-	
+
 	<div class="banner">
 	<!-- start slider -->
        <div id="fwslider">
@@ -43,11 +43,10 @@
 			<p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
 			<div class="close_but"><i class="close1"> </i></div>
 				<ul id="flexiselDemo3">
-				<li><img src="images/board1.jpg" /></li>
-				<li><img src="images/board2.jpg" /></li>
-				<li><img src="images/board3.jpg" /></li>
-				<li><img src="images/board4.jpg" /></li>
-				<li><img src="images/board5.jpg" /></li>
+					@forelse($products as $shirt)
+				<li><img src="{{url('images',$shirt->image)}}" /></li>
+				@empty
+@endforelse
 			</ul>
 		<h3>SnowBoard Extreme Series</h3>
 			<script type="text/javascript">

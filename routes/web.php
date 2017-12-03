@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'frontController@index');
-Route::get('/index.html', 'frontcontroller@index');
+Route::get('/', 'frontController@homehome');
+Route::get('/index.html', 'frontcontroller@homehome');
 Route::get('/shop.html', 'frontcontroller@shop');
 Route::get('/team.html', 'frontcontroller@team');
 Route::get('/single.html', 'frontcontroller@single');

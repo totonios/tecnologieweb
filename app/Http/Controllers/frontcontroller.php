@@ -45,5 +45,8 @@ class frontcontroller extends Controller
     return view('eventi');
   }
 
+public function registrati (){
+  return view('auth.register');
+}
 
 }

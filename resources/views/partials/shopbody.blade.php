@@ -11,7 +11,7 @@
             <div class="col-md-2 column productbox">
                 <img src="{{url('images',$shirt->image)}}" class="img-responsive">
                 <div class="producttitle">{{$shirt->name}}</div>
-                <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
+                <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">COMPRA</a></div><div class="pricetext">£8.95</div></div>
             </div>
 
 

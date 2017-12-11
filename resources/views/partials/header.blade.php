@@ -112,6 +112,9 @@
           <script>
             new UISearch( document.getElementById( 'sb-search' ) );
           </script>
+          @guest
+
+          @else
           <ul class="icon1 sub-icon1 profile_img">
          <li><a class="active-icon c1" href="#"> </a>
           <ul class="sub-icon1 list">
@@ -125,13 +128,14 @@
                         $12.00</span></li>
             <div class="login_buttons">
              <div class="check_button"><a href="checkout.html">Check out</a></div>
-             <div class="login_button"><a href="login.html">Login</a></div>
+
              <div class="clear"></div>
             </div>
             <div class="clear"></div>
           </ul>
          </li>
          </ul>
+         @endguest
           <div class="clear"></div>
        </div>
       </div>

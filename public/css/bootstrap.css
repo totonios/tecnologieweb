@@ -5856,7 +5856,7 @@ button.close {
 	:: Login Section
 	-------------------------------------------------- */
 #loginbackg {
-  background-image: url(http://www.hdwallpaper.nu/wp-content/uploads/2015/03/mountain-valley-26757-1920x1200.jpg);
+  background-image: url('../images/mountainbg.jpg');
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
 }

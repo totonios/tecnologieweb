@@ -6,7 +6,7 @@
          <div class="slider_container">
             <div class="slide">
                 <!-- Slide image -->
-               <img src="images/slider1.jpg" class="img-responsive" alt=""/>
+               <img src="images/slider4.jpg" class="img-responsive" alt=""/>
                 <!-- /Slide image -->
                 <!-- Texts container -->
                 <div class="slide_content">
@@ -39,16 +39,15 @@
       </div>
 	  <div class="main">
 		<div class="content-top">
-			<h2>snowboards</h2>
-			<p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
-			<div class="close_but"><i class="close1"> </i></div>
+			<h2>SKI 360 Design Series:</h2>
+			<p>Snowboard e sci per chi non rinuncia mai al design.</p>
 				<ul id="flexiselDemo3">
 					@forelse($products as $shirt)
-				<li><img src="{{url('images',$shirt->image)}}" /></li>
+				<li><img src="{{url('images',$shirt->image)}}" /> </li>
 				@empty
 @endforelse
 			</ul>
-		<h3>SnowBoard Extreme Series</h3>
+		<h3>In collaborazione con Billabong </h3>
 			<script type="text/javascript">
 		$(window).load(function() {
 			$("#flexiselDemo3").flexisel({

@@ -18,8 +18,9 @@ Route::get('/team.html', 'frontcontroller@team');
 Route::get('/single.html', 'frontcontroller@single');
 Route::get('/login.html', 'frontcontroller@login');
 Route::get('contact.html', 'frontController@contact');
-Route::get('/experiance.html', 'frontcontroller@eventi');
+Route::get('/experiance.html', 'frontcontroller@events');
 Route::get('/register.html', 'frontcontroller@registrati');
+
 
 
 
@@ -34,4 +35,5 @@ Route::group([ 'prefix' => 'admin','middleware'=>'auth'], function() {
 
   Route::resource('product', 'ProductsController');
   Route::resource('category', 'CategoriesController');
+  Route::resource('event', 'EventsController');
 });

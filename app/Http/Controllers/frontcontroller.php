@@ -4,6 +4,7 @@ namespace Ski360\Http\Controllers;
 
 use Ski360\Category;
 use Ski360\Product;
+use Ski360\Evento;
 use Illuminate\Http\Request;
 
 
@@ -26,7 +27,9 @@ class frontcontroller extends Controller
   }
 
   public function events() {
-    return view('events');
+    $flights = Evento::all();
+    return view('eventi', compact('eventi'));
+
   }
 
   public function single() {

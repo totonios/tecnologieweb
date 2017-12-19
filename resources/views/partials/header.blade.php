@@ -63,7 +63,7 @@
               <ul class="nav" id="nav">
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="experiance.html">Eventi</a></li>
+                <li><a href="eventi">Eventi</a></li>
                 <li><a href="contact.html">Contattaci</a></li>
                 @guest
                     <li><a href="{{ route('login') }}">Login</a></li>

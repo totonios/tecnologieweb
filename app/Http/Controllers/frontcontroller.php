@@ -27,8 +27,8 @@ class frontcontroller extends Controller
   }
 
   public function events() {
-    $flights = Evento::all();
-    return view('eventi', compact('eventi'));
+    $ciao=Evento::all();
+    return view('eventi', compact('ciao'));
 
   }
 

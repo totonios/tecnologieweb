@@ -9,5 +9,4 @@ use Illuminate\Database\Eloquent\Model;
 class Evento extends Model
 {
 
-  protected $fillable=['id'];    //
-}
+protected $fillable=['id', 'nomevento', 'dataora', 'image', 'descrizione'];  }

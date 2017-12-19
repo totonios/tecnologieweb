@@ -18,7 +18,7 @@ Route::get('/team.html', 'frontcontroller@team');
 Route::get('/single.html', 'frontcontroller@single');
 Route::get('/login.html', 'frontcontroller@login');
 Route::get('contact.html', 'frontController@contact');
-Route::get('/experiance.html', 'frontcontroller@events');
+Route::get('/eventi', 'frontcontroller@events');
 Route::get('/register.html', 'frontcontroller@registrati');
 
 
